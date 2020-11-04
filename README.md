@@ -1,17 +1,4 @@
-#+TITLE: ASCII to Unicode Equivalents
-#+DATE:
-#+AUTHOR: John Hilliard
-#+EMAIL:
-#+CREATOR: John Hilliard
-#+DESCRIPTION:
-
-
-#+OPTIONS: toc:nil
-#+LATEX_HEADER: \usepackage{geometry}
-#+LATEX_HEADER: \usepackage{lmodern}
-#+LATEX_HEADER: \geometry{left=1in,right=1in,top=1in,bottom=1in}
-#+LaTeX_CLASS_OPTIONS: [letterpaper]
-
+# ASCII to Unicode Equivalents
 
 This is a stupid script I wrote to convert ASCII to ⒶⓈⒸⒾⒾ. The
 motivation was to have a simple command line tool that convert a basic
@@ -19,7 +6,7 @@ string to to a few different variations of based on unicode
 variants. E.g.:
 
 
-#+begin_export ascii
+```
 $ ./convert The quick brown fox jumps over the lazy dog
 The quick brown fox jumps over the lazy dog
 Ⓣⓗⓔ ⓠⓤⓘⓒⓚ ⓑⓡⓞⓦⓝ ⓕⓞⓧ ⓙⓤⓜⓟⓢ ⓞⓥⓔⓡ ⓣⓗⓔ ⓛⓐⓩⓨ ⓓⓞⓖ
@@ -51,7 +38,7 @@ Thé qúíćḱ bŕőẃń főx júḿṕś ővéŕ thé ĺáźӳ dőǵ
 ᵀʰᵉ qᵘⁱᶜᵏ ᵇʳᵒʷⁿ ᶠᵒˣ ʲᵘᵐᵖˢ ᵒᵛᵉʳ ᵗʰᵉ ˡᵃᶻʸ ᵈᵒᵍ
 ʇɥǝ bnıɔʞ qɹoʍu ɟox ɾnɯds oʌǝɹ ʇɥǝ ןɐzʎ poƃ
 THɘ pUiↄk dᴙowᴎ ꟻox jUmqꙅ ovɘᴙ THɘ lAzY bog
-#+end_export
+```
 
 The script is just a single go file. In order to use, ~go build
 convert.go~ and then run it with input that you'd like to try
